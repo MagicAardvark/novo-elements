@@ -9,6 +9,7 @@ import {
     DateControl,
     DateTimeControl,
     EditorControl,
+    EditorTemplateControl,
     FileControl,
     PickerControl,
     RadioControl,
@@ -141,6 +142,8 @@ export class FormUtils {
             type = 'currency';
         } else if (field.dataSpecialization === 'PERCENTAGE') {
             type = 'percentage';
+        } else if (field.dataSpecialization === 'HTML' && field.templateConfig) {
+            type = 'editor-template';
         } else if (field.dataSpecialization === 'HTML') {
             type = 'editor';
         } else if (field.dataSpecialization === 'YEAR') {
@@ -265,6 +268,10 @@ export class FormUtils {
                 break;
             case 'editor':
                 control = new EditorControl(controlConfig);
+                break;
+            case 'editor-template':
+            console.log('setting as editor teplate');    
+                control = new EditorTemplateControl(controlConfig);
                 break;
             case 'tiles':
                 control = new TilesControl(controlConfig);

@@ -66,6 +66,7 @@ export class NovoCKEditorElement implements OnDestroy, AfterViewInit {
     }
 
     updateValue(value) {
+        console.log('running');
         this.zone.run(() => {
             this.value = value;
             this.onChange(value);

@@ -10,5 +10,5 @@ import { NovoCKEditorElement } from './CKEditor';
     declarations: [NovoCKEditorElement],
     exports: [NovoCKEditorElement]
 })
-export class NovoNovoCKEditorModule {
+export class NovoCKEditorModule {
 }

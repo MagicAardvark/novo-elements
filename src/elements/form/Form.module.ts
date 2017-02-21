@@ -8,10 +8,12 @@ import { NovoTilesModule } from './../tiles/Tiles.module';
 import { NovoSelectModule } from './../select/Select.module';
 import { NovoPickerModule } from './../picker/Picker.module';
 import { NovoChipsModule } from './../chips/Chips.module';
+import { NovoCategoryDropdownModule } from './../category-dropdown/CategoryDropdown.module';
 import { NovoDatePickerModule } from './../date-picker/DatePicker.module';
 import { NovoTimePickerModule } from './../time-picker/TimePicker.module';
 import { NovoDateTimePickerModule } from './../date-time-picker/DateTimePicker.module';
-import { NovoNovoCKEditorModule } from './../ckeditor/CKEditor.module';
+import { NovoCKEditorModule } from './../ckeditor/CKEditor.module';
+import { NovoCKEditorTemplateModule } from './../ckeditor-with-template/CKEditorTemplate.module';
 import { NovoQuickNoteModule } from './../quick-note/QuickNote.module';
 import { NovoDynamicFormElement } from './DynamicForm';
 import { NovoFieldsetElement } from './DynamicForm';
@@ -31,9 +33,11 @@ import { NovoTooltipModule } from './../tooltip/Tooltip.module';
         NovoSelectModule,
         NovoPickerModule,
         NovoChipsModule,
+        NovoCategoryDropdownModule,
         NovoDatePickerModule,
         NovoTimePickerModule,
-        NovoNovoCKEditorModule,
+        NovoCKEditorModule,
+        NovoCKEditorTemplateModule,
         NovoFormExtrasModule,
         NovoQuickNoteModule,
         NovoDateTimePickerModule,

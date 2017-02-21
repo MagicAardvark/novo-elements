@@ -49,6 +49,8 @@ import { Helpers } from './../../utils/Helpers';
                             <textarea *ngSwitchCase="'text-area'" [name]="control.key" [attr.id]="control.key" [placeholder]="control.placeholder" [formControlName]="control.key" (input)="handleTextAreaInput($event)" (focus)="handleFocus($event)" (blur)="handleBlur($event)" [maxlength]="control.maxlength" [tooltip]="tooltip" [tooltipPosition]="tooltipPosition"></textarea>
                             <!--Editor-->
                             <novo-editor *ngSwitchCase="'editor'" [name]="control.key" [formControlName]="control.key" (focus)="handleFocus($event)" (blur)="handleBlur($event)"></novo-editor>
+                            <!--Editor with Template-->
+                            <novo-editor-template *ngSwitchCase="'editor-template'"></novo-editor-template>
                             <!--HTML5 Select-->
                             <select [id]="control.key" *ngSwitchCase="'native-select'" [formControlName]="control.key" [tooltip]="tooltip" [tooltipPosition]="tooltipPosition">
                                 <option *ngIf="control.placeholder" value="" disabled selected hidden>{{control.placeholder}}</option>
@@ -278,7 +280,7 @@ export class NovoControlElement extends OutsideClick implements OnInit, OnDestro
         }
 
         // Controls that always have the label active
-        return ['tiles', 'checklist', 'checkbox', 'address', 'file', 'editor', 'radio', 'text-area', 'quick-note'].indexOf(this.control.controlType) !== -1;
+        return ['tiles', 'checklist', 'checkbox', 'address', 'file', 'editor', 'editor-template', 'radio', 'text-area', 'quick-note'].indexOf(this.control.controlType) !== -1;
     }
 
     get requiresExtraSpacing() {

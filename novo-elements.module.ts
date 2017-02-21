@@ -26,7 +26,8 @@ import { NovoChipsModule } from './src/elements/chips/Chips.module';
 import { NovoDatePickerModule } from './src/elements/date-picker/DatePicker.module';
 import { NovoTimePickerModule } from './src/elements/time-picker/TimePicker.module';
 import { NovoDateTimePickerModule } from './src/elements/date-time-picker/DateTimePicker.module';
-import { NovoNovoCKEditorModule } from './src/elements/ckeditor/CKEditor.module';
+import { NovoCKEditorModule } from './src/elements/ckeditor/CKEditor.module';
+import { NovoCKEditorTemplateModule } from './src/elements/ckeditor-with-template/CKEditorTemplate.module';
 import { NovoTipWellModule } from './src/elements/tip-well/TipWell.module';
 import { NovoTableModule } from './src/elements/table/Table.module';
 import { NovoTableExtrasModule } from './src/elements/table/extras/TableExtras.module';
@@ -70,7 +71,8 @@ import { FormUtils } from './src/elements/form/FormUtils';
         NovoDatePickerModule,
         NovoTimePickerModule,
         NovoDateTimePickerModule,
-        NovoNovoCKEditorModule,
+        NovoCKEditorModule,
+        NovoCKEditorTemplateModule,
         NovoTipWellModule,
         NovoTableModule,
         NovoTableExtrasModule,

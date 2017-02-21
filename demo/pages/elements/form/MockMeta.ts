@@ -21,6 +21,16 @@ export const MockMeta = {
             sortOrder: 20
         },
         {
+            name: 'editor',
+            label: 'Editor',
+            dataSpecialization: 'HTML',
+            templateConfig: {
+                bla: 1
+            },
+            sortOrder: 10,
+            required: true
+        },
+        {
             name: 'number',
             type: 'number',
             label: 'Number',
